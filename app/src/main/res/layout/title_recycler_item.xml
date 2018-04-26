@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/top_layout"
+            android:layout_marginTop="10dp"
+            >
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/image_layout"
+                >
+                <com.anshi.healthdeyi.view.self.EaseImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    app:ease_shape_type="round"
+                    android:src="@drawable/logo_service"
+                    />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="付费简化"
+                    android:textSize="16sp"
+                    android:id="@+id/comment_name"
+                    android:textColor="@color/health_title_one"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:id="@+id/item_recommend"
+                    android:text="评论"
+                    android:textColor="@color/health_second_text"
+                    />
+                <com.anshi.healthdeyi.view.self.EaseImageView
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    app:ease_shape_type="rectangle"
+                    app:ease_radius="3dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/comment_img"
+                    android:src="@drawable/banner_three"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="2天前"
+                android:textColor="@color/health_second_text"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/top_layout"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            >
+            <RelativeLayout
+                style="@style/custom_radio_button"
+
+                >
+                <RadioButton
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:onClick="toRecommend"
+                    android:gravity="center"
+                    android:textColor="@color/health_text_color"
+                    android:drawableStart="@drawable/pg_comment_unclick"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/custom_radio_button"
+
+                >
+                <RadioButton
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="@color/health_text_color"
+                    android:drawableStart="@drawable/pg_agree_unclick"
+                    />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

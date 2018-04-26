@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+// 添加插件
+apply plugin: "com.mob.sdk"
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.anshi.healthdeyi"
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+MobSDK {
+    appKey "254a20b701280"
+    appSecret "64029888edbe0339807d90b7d14955d9"
+    SMSSDK {}
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //noinspection GradleDynamicVersion
+    //最新版本
+    compile project(':calendar')
+    compile project(':marqueelibrary')
+    compile project(':jiaozivideoplayer')
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.youth.banner:banner:1.4.10'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.squareup.okhttp3:okhttp:3.9.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.zhy:base-rvadapter:3.0.3'
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    compile 'org.jetbrains:annotations-java5:15.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.kaopiz:kprogresshud:1.0.2'
+    compile 'com.github.sd6352051:NiftyDialogEffects:v1.0.2'
+    compile 'io.reactivex:rxjava:1.2.6'
+    compile 'io.reactivex:rxandroid:1.2.1'
+}

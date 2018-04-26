@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:background="@drawable/common_click"
+        android:id="@+id/party_layout"
+        tools:ignore="DisableBaselineAlignment,UselessParent">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <com.anshi.healthdeyi.view.self.EaseImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:ease_shape_type="rectangle"
+                app:ease_radius="3dp"
+                android:src="@drawable/banner_three"
+                android:id="@+id/report_image"
+                android:contentDescription="@null"
+                />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/report_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/report_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/report_title"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/party_time"
+                android:textColor="@color/colorPrimary"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/report_time"
+                android:text="@string/party_category"
+                android:id="@+id/party_category"
+                android:paddingStart="5dp"
+                android:maxLines="2"
+                android:paddingEnd="5dp"
+                android:textColor="@color/health_title_one"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:layout_alignParentBottom="true"
+                tools:ignore="RelativeOverlap" />
+            <Button
+                android:id="@+id/report_btn"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="12sp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/login_btn_selector"
+                android:gravity="center"
+                android:text="@string/change_score"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+           style="@style/custom_radio_button"
+
+            >
+            <RadioButton
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:id="@+id/comment_rb"
+                android:gravity="center"
+                android:textColor="@color/health_text_color"
+                android:drawableStart="@drawable/pg_comment_unclick"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/custom_radio_button"
+
+            >
+            <RadioButton
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:gravity="center"
+                android:textColor="@color/health_text_color"
+                android:drawableStart="@drawable/pg_agree_unclick"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/custom_radio_button"
+            >
+            <RadioButton
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:gravity="center"
+                android:textColor="@color/health_text_color"
+                android:drawableStart="@drawable/pg_collect_unclick"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

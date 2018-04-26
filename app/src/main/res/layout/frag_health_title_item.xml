@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/click_layout"
+        android:background="@drawable/common_click"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="10dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:paddingStart="15dp"
+            android:text="#德益寿进入社区开展关爱老年人活动"
+            android:textColor="@color/health_title_one" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:id="@+id/news_publish_time"
+            android:layout_marginTop="5dp"
+            android:paddingStart="15dp"
+            android:textColor="@color/health_title_two"
+            android:text="发帖时间:2018年4月14日15:44:19"
+            />
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<Button-->
+        <!--android:id="@+id/title_btn"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginEnd="10dp"-->
+        <!--android:background="@drawable/login_btn_selector"-->
+        <!--android:text="+关注"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--</RelativeLayout>-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/smssdk_line_light_gray"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            style="@style/custom_radio_button"
+
+            >
+            <RadioButton
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:id="@+id/title_comment_rb"
+                android:gravity="center"
+                android:textColor="@color/health_text_color"
+                android:drawableStart="@drawable/pg_comment_unclick"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/custom_radio_button"
+
+            >
+            <RadioButton
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:gravity="center"
+                android:textColor="@color/health_text_color"
+                android:drawableStart="@drawable/pg_agree_unclick"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/custom_radio_button"
+            >
+            <RadioButton
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:gravity="center"
+                android:textColor="@color/health_text_color"
+                android:drawableStart="@drawable/pg_collect_unclick"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

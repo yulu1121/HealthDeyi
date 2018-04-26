@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.anshi.healthdeyi">
+
+    <!-- if you want to load images from the internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/health_logo"
+        android:label="@string/app_name"
+        tools:replace="android:name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".view.flash.FlashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.web.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.healthvoice.HealthVoiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.healthvoice.VoicePlayingActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.forgetpass.ForgetPassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.register.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.healthmovie.HealthMovieActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.guide.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.sign.SignActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.healthprescription.HealthPrescriptionAcitity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.healthpoint.HealthPointActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.healthpoint.HealthPointParentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.healthpoint.HealthPointPartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.healthfamily.HealthFamilyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.healthmethod.HealthMethodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.healthtest.HealthTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.healthfamily.HealthTitleFormationActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".view.healthfamily.HealthPartFormation"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".view.comment.CommentActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".view.comment.CommentImageActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.anshi.healthdeyi.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <!--提供共享路径-->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:name=".view.setting.AboutAppActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".view.setting.SettingActivity"
+            android:screenOrientation="portrait"
+            />
+    </application>
+
+</manifest>

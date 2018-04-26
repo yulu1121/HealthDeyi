@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_main_seven">#2EA3C4</color>
+    <color name="color_main_seven_click">#56bbd7</color>
+    <color name="black">#000000</color>
+    <color name="my_color">#F85900</color>
+    <!--health-->
+    <color name="health_title_one">#111111</color>
+    <color name="health_title_two">#444444</color>
+    <color name="health_text_color">#b31d21</color>
+    <color name="health_text_normal">#222222</color>
+    <color name="health_second_text">#999999</color>
+    <color name="health_hint_color">#666666</color>
+    <color name="health_divider_color">#CCCCCC</color>
+    <color name="health_back_color">#eeeae4</color>
+    <color name="health_point_color">#f8e9e3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darkgrey">#6C6C6C</color>
+    <color name="back_color">#F0F0F0</color>
+    <color name="grey">#ACACAC</color>
+    <color name="lightgrey">#ECECEC</color>
+    <color name="lightlightgrey">#F1F1F1</color>
+    <color name="blue">#0074A6</color>
+    <color name="gray_normal">#666667</color>
+    <color name="light_white">#f5f5f5</color>
+    <color name="logo_color">#17A53C</color>
+    <color name="logo_color_click"> #1cce4b</color>
+    <color name="guide_color">#E6E5E1</color>
+    <color name="comment_color">#FF9800</color>
+    <color name="act_background">#efefef</color>
+    <color name="phone_bg">#f6f6f6</color>
+    <color name="main_green">#94C437</color>
+    <color name="smssdk_line_light_gray">#ffe0e0e6</color>
+    <!-- 透明半透明色值 -->
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half">#66000000</color>
+    <color name="maybe_color_main">#F24949</color>
+    <color name="pure_color">#D3B2D4</color>
+    <color name="price_color">#FF2E00</color>
+</resources>
